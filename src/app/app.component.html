@@ -1,8 +1,5 @@
-<div>
-  <app-header [name]="name" (onNameChanged)="setName($event)"></app-header>
-  <h2>
-    Hello {{name}}
-  </h2>
-  
-</div>
+<nav>
+  <a routerLink="/profile">Profile</a>
+  <a routerLink="/home">Home</a>
+</nav>
 <router-outlet></router-outlet>
