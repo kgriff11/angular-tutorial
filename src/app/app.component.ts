@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-tutorial';
+  name: string = 'Kelso';
+
+  constructor(){}
+
+  setName(newName: string){
+    this.name = newName;
+  }
+
 }
