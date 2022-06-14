@@ -11,7 +11,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let movie of movies; let i=index;">
+            <tr *ngFor="let movie of movies; let i=index; let e = even; let o = odd;" [ngClass]="{ even: e, odd: o}">
                 <td>{{movie.title}}</td>
                 <td>{{movie.director}}</td>
                 <td>{{movie.cast}}</td>
