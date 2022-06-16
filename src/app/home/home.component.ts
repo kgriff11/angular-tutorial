@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   title: string = 'Top 4 Movies';
+  num: number = 0;
+  showMe: boolean;
 
   movies: Movie[] = [
     {title: 'Batman v Superman: Dawn of Justice', director: 'Zack Snyder', cast: 'Ben Affleck, Henry Cavill, Amy Adams', releaseDate: 'March 25, 2016'},
