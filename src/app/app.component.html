@@ -3,4 +3,27 @@
 |
   <a routerLink="/profile">Profile</a>
 </nav>
+
+<p> Unformatted date : {{toDate}}</p>
+
+<p> short : {{toDate | date: 'short'}}</p>
+<p> fullDate : {{toDate | date: 'fullDate'}}</p>
+<p> longDate : {{toDate | date: 'longDate'}}</p>
+<p> mediumDate : {{toDate | date: 'mediumDate'}}</p>
+<p> shortDate : {{toDate | date: 'shortDate'}}</p>
+<p> mediumTime : {{toDate | date: 'mediumTime'}}</p>
+<p> dd-MM-y : {{toDate | date: 'dd-MM-y'}}</p>
+<p> dd-MM-yy : HH:mm : {{toDate | date: 'dd-MM-yy HH:mm'}}</p>
+
+<p> {{toDate | date: 'longDate'}} {{toDate | date: 'mediumTime'}}</p>
+<br>
+
+<p>Unformatted date : {{name}}</p>
+<p>Uppercase : {{name | uppercase}} </p>
+<p>Lowercase : {{name | lowercase}}</p>
+
+
+
+
+
 <router-outlet></router-outlet>

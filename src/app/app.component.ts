@@ -7,9 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-tutorial';
-  name: string = 'Kelso';
+  name: string = 'KeLSo';
+
+  toDate: Date = new Date();
+
 
   constructor(){}
+
+
+
+
+
+
+
 
   setName(newName: string){
     this.name = newName;
